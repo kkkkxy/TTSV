@@ -3,7 +3,7 @@
 set -x
 export CUDA_VISIBLE_DEVICES="0"
 
-MODEL_NAME_OR_PATH="model/Qwen2.5-Math-7B"
+MODEL_NAME_OR_PATH="model/Qwen2.5-Math-1.5B"
 PROMPT_TYPE="qwen25-math-cot"
 DATA_NAMES="math500"
 MAX_TOKENS_PER_CALL="3072"
@@ -15,7 +15,7 @@ NUM_TEST_SAMPLE=-1
 IFS=',' read -ra DATASETS <<< "$DATA_NAMES"
 ALL_EXIST=true
 
-TUNING_EMBEDDINGS_PATH="checkpoints/qwen2.5-math-7b_math500"
+TUNING_EMBEDDINGS_PATH="checkpoints/qwen2.5-math-1.5b_math500"
 OUTPUT_DIR="eval_result"
 mkdir -p $OUTPUT_DIR
 

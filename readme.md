@@ -6,7 +6,7 @@ To facilitate the verification of our results, we provide a TTSV checkpoint.
 
 ### TTSV Checkpoint
 
-We have included the TTSV weights for the **Qwen2.5-math-7b** model, trained on the **MATH500** dataset. You can find this checkpoint at: checkpoints/qwen2.5-math-7b_math500/
+We have included the TTSV weights for the **Qwen2.5-math-1.5b** model, trained on the **MATH500** dataset. You can find this checkpoint at: checkpoints/qwen2.5-math-1.5b_math500/
 
 ### Model Weights
 
@@ -30,10 +30,10 @@ To run the evaluation and reproduce the results on the corresponding test sets, 
   pip install --no-build-isolation flash-attn==2.7.3
   ```
 
-* **Download Model**: Download the Qwen2.5-math-7b model and place it in the designated path:
+* **Download Model**: Download the Qwen2.5-math-1.5b model and place it in the designated path:
 
   ```txt
-  model/Qwen2.5-Math-7B
+  model/Qwen2.5-Math-1.5B
   ```
 
   **Run Training Script**: Execute the following command from the root directory of this project:
